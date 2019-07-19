@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate account</title>
+</head>
+<body>
+<p>Viết phương thức để kiểm tra tính hợp lệ của tên tài khoản.</p>
+<h>Một tài khoản hợp lệ cần đạt các yêu cầu sau:</h>
+
+<ul>
+    <li>Không chứa các ký tự đặc biệt</li>
+    <li>Ít nhất là 6 ký tự</li>
+    <li>Không chứa các ký tự viết hoa</li>
+    <li>Cho phép dấu gạch dưới (_)</li>
+</ul>
+<input type="text" id="validate" placeholder="Enter account here" oninput="validateAccount()">
+<p id="kq"></p>
+<h>Các account hợp lệ: </h>
+
+<ol>
+    <li>123abc_</li>
+    <li>_abc123</li>
+    <li>______</li>
+    <li>12345</li>
+    <li>abcdefg</li>
+</ol>
+
+<h>Các account hợp lệ: </h>
+
+<ol>
+    <li>.@</li>
+    <li>12345</li>
+    <li>1234_</li>
+    <li>abcde</li>
+</ol>
+<script src="js.js"></script>
+</body>
+</html>
